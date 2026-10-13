@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>intentional transformation</title>
-  <meta name="description" content="argotactical prevents calamity">
-  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <title>it</title>
+  <meta name="description" content="Nautilus: AI and technology transformation business case, risk modeling and value realization tracking">
+  <link rel="icon" href="/assets/logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="logo" href="/" aria-label="argotactical home"><img src="/assets/logo.svg" alt="argotactical" width="40" height="40"></a>
+    <a class="logo" href="/" aria-label="argotactical home"><img src="/assets/logo.png" alt="argotactical" width="44" height="39"></a>
     <input type="checkbox" id="menu" class="menu-toggle" aria-label="menu">
     <label for="menu" class="menu-btn" aria-hidden="true">menu</label>
     <nav class="nav">
@@ -26,10 +26,42 @@
     </nav>
   </header>
   <main>
-    <h1 class="title">intentional transformation</h1>
-    <p class="sub">(getting 'it' right)</p>
+    <section class="intro">
+      <h1 class="title">intentional transformation</h1>
+      <p class="sub">(getting 'it' right)</p>
+    </section>
+    <section class="section wrap">
+      <div class="product">
+        <img src="/assets/nautilus.png" alt="Nautilus shell" width="240" height="176">
+        <div>
+          <p>Nautilus is a purpose built AI and technology transformation business case and risk modeling solution that also provides autonomous value realization tracking.</p>
+          <p>Nautilus is deployed client-hosted, on-premise or cloud.</p>
+        </div>
+      </div>
+      <p class="label">Nautilus</p>
+      <div class="carousel">
+        <div class="slides">
+          <img src="/assets/nautilus-business-case.webp" alt="Nautilus business case view with NPV, IRR, ROI and payback" width="900" height="686">
+          <img src="/assets/nautilus-realization.webp" alt="Nautilus value realization KPIs" width="900" height="428">
+          <img src="/assets/nautilus-connectors.webp" alt="Nautilus platform connectors" width="900" height="454">
+        </div>
+        <button class="prev" aria-label="previous image">&#8249;</button>
+        <button class="next" aria-label="next image">&#8250;</button>
+        <div class="dots"><span class="on"></span><span></span><span></span></div>
+      </div>
+    </section>
+    <script>
+      (function () {
+        var s = document.querySelector('.slides'), d = document.querySelectorAll('.dots span'), n = d.length;
+        function idx() { return Math.round(s.scrollLeft / s.clientWidth); }
+        function go(i) { s.scrollTo({ left: ((i + n) % n) * s.clientWidth }); }
+        document.querySelector('.prev').onclick = function () { go(idx() - 1); };
+        document.querySelector('.next').onclick = function () { go(idx() + 1); };
+        s.addEventListener('scroll', function () { var i = idx(); d.forEach(function (e, k) { e.classList.toggle('on', k === i); }); });
+      })();
+    </script>
   </main>
-  <footer class="site-footer">
+  <footer class="site-footer wrap">
     <p>&copy; <span id="yr">2026</span> argotactical, llc - all rights reserved</p>
     <nav class="footer-nav">
       <a href="/privacy">privacy</a>
