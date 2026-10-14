@@ -1,0 +1,5 @@
+title: argotactical
+url: https://www.argotactical.com
+exclude:
+  - README.md
+  - .gitignore

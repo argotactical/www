@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script>document.documentElement.className += ' js'</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+{%- if page.noindex %}
+  <meta name="robots" content="noindex">
+{%- else %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace: '.html', '' }}">
+{%- endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="argotactical">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | replace: '.html', '' }}">
+  <meta property="og:image" content="{{ site.url }}/assets/og.png">
+  <meta property="og:image:alt" content="argotactical logo: an octopus">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preload" href="/assets/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/style.css">
+{%- if page.jsonld %}
+  <script type="application/ld+json">{{ page.jsonld }}</script>
+{%- endif %}
+</head>
+<body>
+  <a class="skip" href="#content">skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="/" aria-label="argotactical home"><img src="/assets/logo.webp" alt="argotactical" width="44" height="39"></a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="nav">menu</button>
+    {% include nav.html %}
+  </header>
+  <main id="content">
+{{ content }}
+  </main>
+  <footer class="site-footer wrap">
+    <p>&copy; {{ site.time | date: "%Y" }} argotactical, llc - all rights reserved</p>
+    <nav class="footer-nav" aria-label="footer">
+      <a href="/privacy">privacy</a>
+      <a href="/contact">contact</a>
+      <a href="https://argotactical.github.io/present/1">about</a>
+    </nav>
+  </footer>
+  <script src="/assets/site.js" defer></script>
+{%- if page.carousel %}
+  <script src="/assets/carousel.js" defer></script>
+{%- endif %}
+</body>
+</html>
