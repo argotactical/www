@@ -22,7 +22,7 @@ The pages use root-relative paths (`/assets/...`), so serve the folder instead o
 That shows the pages without the layout. For the fully rendered site, use `bundle exec jekyll serve` (needs Ruby and the `github-pages` gem).
 
 ## Events
-Edit `events.html`. An event whose `data-end` date has passed moves itself to the "past" group in the browser; update the markup at some point so it stays right without JavaScript. Keep the `jsonld` front matter in step with the next upcoming event.
+Edit `events.html`. Keep the `jsonld` front matter in step with the next upcoming event.
 
 ## Deploy
 Push to `main`; GitHub Pages (Settings > Pages > Deploy from branch `main`, `/ (root)`, custom domain `www.argotactical.com`, Enforce HTTPS) rebuilds automatically.
