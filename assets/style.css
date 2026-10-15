@@ -109,9 +109,6 @@ main { flex: 1; }
 }
 .hero b { font-weight: 700; }
 .tag { margin: 128px 0 0; }
-.cta { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px 32px; margin-top: 48px; }
-.cta a { text-underline-offset: 4px; }
-.cta a:hover { text-decoration-thickness: 2px; }
 
 .section { padding-top: 120px; }
 .section p { margin: 0 0 16px; }
