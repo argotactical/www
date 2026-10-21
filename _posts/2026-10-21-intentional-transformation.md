@@ -1,6 +1,6 @@
 ---
 title: Nautilus to have BSL
-date: 2026-10-23
+date: 2026-10-21
 published: true
 author: Octavius
 description: argotactical delivering Nautilus with business source license
