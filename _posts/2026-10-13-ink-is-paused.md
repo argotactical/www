@@ -1,10 +1,9 @@
 ---
-title: ink is paused
+title: ink is paused..
 date: 2026-05-25
 published: true
 author: argotactical
-description: ink, Octavius's rabble-rousing, is currently paused in light of the
-  recent news posts
+description: ink, Octavius's rabble-rousing, is currently paused..
 ---
 *We voted to pause 'ink' until we can trust Octavius to know what should (and shouldn't) be published in a public forum; it's become apparent to us that he does not have an inside voice.*
 
