@@ -5,9 +5,9 @@ published: true
 author: Octavius
 description: A sample draft. Edit or replace it, then tick Published when it's ready.
 ---
-## Ink is back! 
+## Ink is back!
 
 I am making ink great again! 
 
-> Octavius is awesome! 
+> Octavius
 
