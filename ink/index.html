@@ -1,0 +1,26 @@
+---
+layout: default
+title: "ink | argotactical"
+description: "ink: Octavius's rabble-rousing. Writing from argotactical."
+nav: ink
+---
+    <section class="intro">
+      <h1 class="title">ink</h1>
+      <p class="sub">(Octavius's rabble-rousing)</p>
+    </section>
+    <section class="section wrap posts">
+{%- if site.posts.size > 0 %}
+      <ol class="post-list">
+{%- for post in site.posts %}
+        <li>
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p class="meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" | downcase }}</time>{% if post.author %} &middot; {{ post.author }}{% endif %}</p>
+          <p>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 220 }}</p>
+        </li>
+{%- endfor %}
+      </ol>
+      <p class="feed"><a href="/feed.xml">subscribe (rss)</a></p>
+{%- else %}
+      <p class="center">nothing here yet. Octavius is choosing his words carefully, for once.</p>
+{%- endif %}
+    </section>

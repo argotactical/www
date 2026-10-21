@@ -1,0 +1,25 @@
+---
+layout: default
+---
+    <article class="post">
+      <header class="intro">
+        <p class="sub"><a href="/ink">ink</a></p>
+        <h1 class="title post-title">{{ page.title }}</h1>
+        <p class="sub">
+          <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" | downcase }}</time>{% if page.author %} &middot; {{ page.author }}{% endif %}
+        </p>
+      </header>
+{%- if page.image %}
+      <figure class="post-cover wrap">
+        <img src="{{ page.image }}" alt="{{ page.image_alt | default: '' | escape }}">
+      </figure>
+{%- endif %}
+      <div class="post-body wrap">
+{{ content }}
+      </div>
+      <nav class="post-nav wrap" aria-label="more posts">
+        {%- if page.previous %}<a href="{{ page.previous.url }}">&lsaquo; {{ page.previous.title }}</a>{% else %}<span></span>{% endif %}
+        <a href="/ink">all posts</a>
+        {%- if page.next %}<a href="{{ page.next.url }}">{{ page.next.title }} &rsaquo;</a>{% else %}<span></span>{% endif %}
+      </nav>
+    </article>

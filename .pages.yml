@@ -1,0 +1,51 @@
+# Pages CMS settings (https://pagescms.org)
+# Lets you write and edit ink posts in a web editor. Saving commits to this repo,
+# and GitHub Pages republishes the site about a minute later.
+
+media:
+  input: assets/ink
+  output: /assets/ink
+
+content:
+  - name: posts
+    label: ink posts
+    type: collection
+    path: _posts
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [title, date, published]
+      sort: [date]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: published
+        label: Published (leave unticked to keep this post as a hidden draft)
+        type: boolean
+        default: false
+      - name: author
+        label: Author
+        type: select
+        default: argotactical
+        options:
+          values: [argotactical, Octavius]
+      - name: description
+        label: Summary (shown in the post list and on social share cards; optional)
+        type: text
+      - name: image
+        label: Cover image (optional)
+        type: image
+      - name: image_alt
+        label: Cover image description, for screen readers (optional)
+        type: string
+      - name: body
+        label: Post
+        type: rich-text

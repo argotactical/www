@@ -1,5 +1,25 @@
 title: argotactical
+description: "ink: writing from argotactical, an execution company that prevents calamity."
 url: https://www.argotactical.com
+author: argotactical
+timezone: America/Detroit
+
+# ink (blog) posts live in _posts/ and publish at /ink/<post-title>
+permalink: /ink/:title
+plugins:
+  - jekyll-feed
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      nav: ink
+
 exclude:
   - README.md
   - .gitignore
+  - .pages.yml
