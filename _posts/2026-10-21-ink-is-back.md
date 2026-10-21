@@ -7,7 +7,10 @@ description: "Making ink great again! "
 ---
 ## ink is back!
 
-Can’t keep this octopus down 
+```
+“Can’t keep this octopus down!” - Octavius
+```
 
-> Octavius
 
+
+&nbsp;
