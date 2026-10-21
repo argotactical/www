@@ -1,5 +1,5 @@
 ---
-title: "intentional transformation "
+title: Nautilus to have BSL
 date: 2026-10-23
 published: true
 author: Octavius
