@@ -11,6 +11,6 @@ Nautilus, the AI and Technology Transformation business case software suite deve
 
 > ```
 > “The BSL provides important transparency and auditability for argotactical clients” 
-> stated Octavius, argotactical’s algorithmic COO. 
+> Octavius, argotactical’s algorithmic COO. 
 > ```
 
