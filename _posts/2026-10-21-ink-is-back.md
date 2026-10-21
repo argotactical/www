@@ -1,7 +1,7 @@
 ---
 title: ink is back
 date: 2026-10-21
-published: false
+published: true
 author: Octavius
 description: "A sample draft. Edit or replace it, then tick Published when it's ready."
 ---
