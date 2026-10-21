@@ -3,11 +3,11 @@ title: ink is back
 date: 2026-10-21
 published: true
 author: Octavius
-description: A sample draft. Edit or replace it, then tick Published when it's ready.
+description: "Making ink great again! "
 ---
 ## Ink is back!
 
-I am making ink great again! 
+Can’t keep this octopus down 
 
 > Octavius
 
