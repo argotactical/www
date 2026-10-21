@@ -1,6 +1,6 @@
 ---
 title: ink is paused
-date: 2026-10-13
+date: 2026-05-25
 published: true
 author: argotactical
 description: ink, Octavius's rabble-rousing, is currently paused.
